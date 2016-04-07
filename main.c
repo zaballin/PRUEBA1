@@ -9,7 +9,7 @@ int main(void)
 	float res;
 	int opc;
 
-	printf(" 1-suma, 2-resta, 3-mult, 4-div\n");
+	printf(" 1-suma, 2-mult\n");
 	scanf("%d",&opc);
 	getchar();
 	printf("valor 1\n");
