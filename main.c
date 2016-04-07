@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-
+extern float suma(int a, int b);
+extern float mult(int a, int b);
 
 int main(void)
 {
@@ -16,7 +17,20 @@ int main(void)
 	printf("valor 2\n");
 	scanf("%d",&val2);
 	
-
+	if ( opc == 1)
+	{
+		res = suma(val1,val2);
+	}
+	else
+        {
+        	if (opc == 2)
+        	{
+			res = mult(val1,val2);
+		}
+		else
+		  printf ("opcion no valida \n");
+	}
+        
         return 0;
 	
 }
