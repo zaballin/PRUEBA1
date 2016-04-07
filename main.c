@@ -30,6 +30,7 @@ int main(void)
 		else
 		  printf ("opcion no valida \n");
 	}
+    printf("el valor es %f \n",res);
         
         return 0;
 	
