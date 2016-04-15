@@ -2,7 +2,7 @@
 
 extern float suma(int a, int b);
 extern float mult(int a, int b);
-
+// Zaballin estuvo aqui
 int main(void)
 {
 	int val1, val2;
