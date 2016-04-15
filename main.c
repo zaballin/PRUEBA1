@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 
-extern float suma(int a, int b);
-extern float resta(int a, int b);
+extern int suma(int a, int b);
+extern int resta(int a, int b);
+/** 
 extern float mult(int a, int b); 
 extern float expo(float a);
 extern float calculaPi(void);
@@ -10,8 +11,9 @@ extern float potencia(int a, int b);
 extern float coseno(float a);
 extern float division(int a, int b);
 extern float serietaylor(float a, int b);
+ **/
 
-extern int  menu(void);
+int menu(void);
 int main(void)
 {
         int val1, val2;
