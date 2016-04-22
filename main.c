@@ -28,7 +28,7 @@ int main(void)
           switch (opc)
           {
         case 1:
-        	printf("\tSUMA\n\n")
+        	printf("\tSUMA\n\n");
                 printf("dame un valor:\n");
                 scanf("%d",&val1);
                  printf("dame un otro:\n");
@@ -37,7 +37,7 @@ int main(void)
                 printf("La suma es %f\n",res);
                 break;
 	case 2:
-                printf("\tRESTA\n\n")
+                printf("\tRESTA\n\n");
                 printf("dame un valor:\n");
                 scanf("%d",&val1);
                  printf("dame un otro:\n");
@@ -46,7 +46,7 @@ int main(void)
                 printf("La resta es %f\n",res);
                 break;
         case 3:
-                printf("\tMULTIPLICACION\n\n")
+                printf("\tMULTIPLICACION\n\n");
                 printf("dame un valor:\n");
                 scanf("%d",&val1);
                  printf("dame un otro:\n");
@@ -55,19 +55,19 @@ int main(void)
                 printf("La multiplicacion es %f\n",res);
                 break;
 	case 4:
-		printf("\tPI\n\n")
+		printf("\tPI\n\n");
                 res = calculaPi();
                 printf("PI es igual a: %f\n",res);
                 break;
 	case 5:
-		printf("\tEXPONENCIAL\n\n")
+		printf("\tEXPONENCIAL\n\n");
                 printf("dame un valor:\n");
                 scanf("%f",&f1);
                 res = expo(f1);
                 printf("EL resultado es: %f\n",res);
                 break;
 	case 6:
-               printf("\tPOTENCIA\n\n")
+               printf("\tPOTENCIA\n\n");
                 printf("dame un valor:\n");
                 scanf("%d",&val1);
                  printf("dame un otro:\n");
@@ -76,14 +76,14 @@ int main(void)
                 printf("La resultado es %lu\n",res_potencia);
                 break;
 	case 7:
-		printf("\tCOSENO\n\n")
+		printf("\tCOSENO\n\n");
                 printf("dame un valor:\n");
                 scanf("%f",&f1);
                 res = coseno(f1);
                 printf("EL resultado es: %f\n",res);
                 break;
 case 8:
-                printf("\tDIVISION\n\n")
+                printf("\tDIVISION\n\n");
                 printf("dame un valor:\n");
                 scanf("%d",&val1);
                 printf("dame un otro:\n");
@@ -92,7 +92,7 @@ case 8:
                 printf("La division es %f\n",res);
                 break;
 case 9:
-                printf("\tEL SENO DE TAYLOR\n\n")
+                printf("\tEL SENO DE TAYLOR\n\n");
                 printf("dame un valor:\n");
                 scanf("%d",&val1);
                  printf("dame un otro:\n");
@@ -105,8 +105,7 @@ case 9:
            default:
                   printf ("opcion no valida \n");
           }
-        }while(opc!=11);
+        }while(opc!=10);
   
         return 0;
-
 }
