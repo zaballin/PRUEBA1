@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <math.h>
 
-extern int suma(int a, int b);
-extern int resta(int a, int b);
+extern float suma(int a, int b);
+extern float resta(int a, int b);
 /** 
 extern float mult(int a, int b); 
 extern float expo(float a);
 extern float calculaPi(void);
-extern float potencia(int a, int b);
+extern long int potencia(int a, int b);
 extern float coseno(float a);
 extern float division(int a, int b);
 extern float serietaylor(float a, int b);
@@ -19,6 +19,7 @@ int main(void)
         int val1, val2;
 	float f1;
         float res=0.0;
+        long int res_potencia = 0;
         int opc;
         do{
           opc = menu();
@@ -30,58 +31,58 @@ int main(void)
                 scanf("%d",&val1);
                 scanf("%d",&val2);
                 res = suma(val1,val2);
-                printf("La suma es %d\n",res);
+                printf("La suma es %f\n",res);
                 break;
 	case 2:
                 printf("dame dos valores\n");
                 scanf("%d",&val1);
                 scanf("%d",&val2);
                 res = resta(val1,val2);
-                printf("La resta es %d\n",res);
+                printf("La resta es %f\n",res);
                 break;
         case 3:
                 printf("dame dos valores\n");
                 scanf("%d",&val1);
                 scanf("%d",&val2);
                 res = mult(val1,val2);
-                printf("La multiplicacion es %d\n",res);
+                printf("La multiplicacion es %f\n",res);
                 break;
 	case 4:
                 res = calculaPi();
-                printf("PI es igual a: %d\n",res);
+                printf("PI es igual a: %f\n",res);
                 break;
 	case 5:
                 printf("dame un valor\n");
                 scanf("%f",&f1);
                 res = expo(f1);
-                printf("EL resultado es: %d\n",res);
+                printf("EL resultado es: %f\n",res);
                 break;
 	case 6:
                 printf("dame dos valores\n");
                 scanf("%d",&val1);
                 scanf("%d",&val2);
-                res = potencia(val1,val2);
+                res_potencia = potencia(val1,val2);
                 printf("La resultado es %d\n",res);
                 break;
 	case 7:
                 printf("dame un valor\n");
                 scanf("%f",&f1);
                 res = coseno(f1);
-                printf("EL resultado es: %d\n",res);
+                printf("EL resultado es: %f\n",res);
                 break;
 case 8:
                 printf("dame dos valores\n");
                 scanf("%d",&val1);
                 scanf("%d",&val2);
                 res = division(val1,val2);
-                printf("La division es %d\n",res);
+                printf("La division es %f\n",res);
                 break;
 case 9:
                 printf("dame dos valores\n");
                 scanf("%f",&f1);
                 scanf("%d",&val2);
-                res = serietaylor(f1,val2);
-                printf("El resultado es %d\n",res);
+                res = sen_tay(f1,val2);
+                printf("El resultado es %f\n",res);
                 break;
            case 10:
                 break;
