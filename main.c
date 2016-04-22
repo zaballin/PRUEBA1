@@ -89,7 +89,8 @@ case 9:
            default:
                   printf ("opcion no valida \n");
           }
-        }while(opc!=9);
+        }while(opc!=11);
+  
         return 0;
 
 }
