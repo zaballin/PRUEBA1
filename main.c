@@ -62,7 +62,7 @@ int main(void)
                 scanf("%d",&val1);
                 scanf("%d",&val2);
                 res_potencia = potencia(val1,val2);
-                printf("La resultado es %d\n",res);
+                printf("La resultado es %lu\n",res_potencia);
                 break;
 	case 7:
                 printf("dame un valor\n");
